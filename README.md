@@ -1,4 +1,4 @@
-# CodeIgniter 4 Application Starter
+# WebApp-GaussJordan-BatikDindaHayu
 
 ## Setup
 
@@ -20,3 +20,39 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+## Workflow
+
+1. Problem Statement / Specfication / Abstrack
+   - Users or Customers
+   - Subject Master Expert
+2. Solution or Competition Research
+   - Inspirations
+3. User Experience or Business Process / Flow or Ide Solution
+
+   - User Research
+   - Validate the ide / solution
+
+4. Application Implementation
+
+- Tech Stack
+  - PHP
+  - HTML
+  - Javascript
+  - Tailwind CSS
+  - Laravel-Mix
+
+### Details
+
+Will come 😁😊✌
+
+### Problem
+
+### Competitation / Alternative
+
+- Youtube
+-
+
+### Features/Limitations
+
+### Process and Data
