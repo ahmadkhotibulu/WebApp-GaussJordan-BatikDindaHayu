@@ -48,9 +48,9 @@
         <div>
           <label for="username" class="text-sm font-medium">Username</label>
           <div class="relative mt-1">
-            <input type="text" id="username" name="username" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" placeholder="Masukan email Anda" pattern="^(?=.{3,24}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required />
+            <input type="text" id="username" name="username" class="w-full rounded-lg border-mint-200 p-4 pr-12 text-sm shadow-md" placeholder="Masukan email Anda" pattern="^(?=.{3,24}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required />
             <span class="absolute inset-y-0 right-4 inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-mint-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
               </svg>
             </span>
@@ -60,9 +60,9 @@
         <div>
           <label for="nama-lengkap" class="text-sm font-medium">Nama Lengkap</label>
           <div class="relative mt-1">
-            <input type="text" id="nama_lengkap" name="nama_lengkap" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" placeholder="Masukan nama lengkap Anda" required />
+            <input type="text" id="nama_lengkap" name="nama_lengkap" class="w-full rounded-lg border-mint-200 p-4 pr-12 text-sm shadow-md" placeholder="Masukan nama lengkap Anda" required />
             <span class="absolute inset-y-0 right-4 inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-mint-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
               </svg>
             </span>
@@ -72,9 +72,9 @@
         <div>
           <label for="password" class="text-sm font-medium">Kata Sandi</label>
           <div class="relative mt-1">
-            <input type="password" id="password" name="password" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" placeholder="Enter password" />
+            <input type="password" id="password" name="password" class="w-full rounded-lg border-mint-200 p-4 pr-12 text-sm shadow-md" placeholder="Enter password" />
             <span class="absolute inset-y-0 right-4 inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-mint-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
               </svg>
@@ -85,9 +85,9 @@
         <div>
           <label for="ulangi_password" class="text-sm font-medium">Konfirmasi Kata Sandi</label>
           <div class="relative mt-1">
-            <input type="password" id="ulangi_password" name="ulangi_password" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" placeholder="Masukkan ulang kata sandi" />
+            <input type="password" id="ulangi_password" name="ulangi_password" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-md" placeholder="Masukkan ulang kata sandi" />
             <span class="absolute inset-y-0 right-4 inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-mint-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
               </svg>
