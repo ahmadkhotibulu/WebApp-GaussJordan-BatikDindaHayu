@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+    src: url(/fonts/DMMono-Light.tff) format('tff'),
+      url(/fonst/DMMono-Italic.tff) format('tff');
+  }
+}
