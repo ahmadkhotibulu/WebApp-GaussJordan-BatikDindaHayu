@@ -5,6 +5,7 @@
 - First, import the MySQL database in folder `## DATABASE`.
 - Copy `env` to `.env` and tailor for your app, specifically the baseURL and any database settings.
 - Install and update dependency using `composer i` and `composer update` command.
+- Start your build process. Run your build process with `npm run dev`
 - To run the web server do `php spark serve` command.
 
 ## Server Requirements
@@ -39,6 +40,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
   - PHP
   - HTML
   - Javascript
+  - Codeigniter 4
   - Tailwind CSS
   - Laravel-Mix
 
