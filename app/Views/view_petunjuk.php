@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <section>
+  <section class="font-mono">
     <header class="bg-white p-2 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
       <div class="flex items-center justify-between">
         <a href="<?= base_url('back'); ?>" class="hover:bg-mint-400 group flex items-center rounded-md bg-mint-800 text-white-50 text-sm font-medium pl-2 pr-3 py-2 shadow-sm">

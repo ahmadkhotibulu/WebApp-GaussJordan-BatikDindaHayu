@@ -5,7 +5,7 @@
 - First, import the MySQL database in folder `## DATABASE`.
 - Copy `env` to `.env` and tailor for your app, specifically the baseURL and any database settings.
 - Install and update dependency using `composer i` and `composer update` command.
-- Start your build process. Run your build process with `npm run dev`
+- Start your build process. Run your build process with `npx mix watch`
 - To run the web server do `php spark serve` command.
 
 ## Server Requirements
