@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aplikasi Estimasi Jumlah Produksi UMKM Batik Dinda Hayu Menggunakan Metode Gauss-Jordan</title>
-  <!-- Styles Tailwind CSS -->
-  <link rel="stylesheet" href="<?= base_url('css/app.css') ?>" />
+  <!-- Styles Tailwind CSS Start-->
+  <link rel="stylesheet" href="<?= base_url('css/app.css'); ?>" />
+  <!-- Styles Tailwind CSS End-->
 </head>
 
 <body>
-  <div class="font-mono mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-lg">
-      <h1 class="uppercase text-center text-2xl font-bold text-mint-600 sm:text-2xl">
+      <h1 class="uppercase text-center text-2xl font-bold text-primary sm:text-2xl">
         Aplikasi Estimasi Jumlah Produksi UMKM Batik Dinda Hayu Menggunakan Metode Gauss-Jordan
       </h1>
       <div class="container mx-auto">
@@ -21,15 +22,15 @@
           <div class="w-3/12">
             <ul class="flex space-x-3 py-4 px-6 gap-80" role="list">
               <li><a class="mx-auto text-yellow-600 text-sm text-opacity-60 font-semibold" href="<?= base_url('petunjuk-page'); ?>">Petunjuk Penggunaan</a></li>
-              <li><a class="mx-auto text-mint-700 text-sm text-opacity-60 font-semibold" href="<?= base_url('pengembang-page'); ?>">Pengembang</a></li>
+              <li><a class="mx-auto text-primary text-sm text-opacity-60 font-semibold" href="<?= base_url('pengembang-page'); ?>">Pengembang</a></li>
             </ul>
           </div>
         </div>
       </div>
 
       <form action="" class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
-        <h2 class="font-bold text-2xl text-mint-600">Halaman Masuk</h2>
-        <p class="text-lg font-medium">Masukkan data diri Anda untuk masuk ke aplikasi</p>
+        <h2 class="font-bold text-2xl text-mint-500">Halaman Masuk</h2>
+        <p class="text-lg text-mint-400 font-medium">Masukkan data diri Anda untuk masuk ke aplikasi</p>
 
         <?php
         $session = session();
@@ -69,13 +70,13 @@
           </div>
         </div>
 
-        <button type="submit" class="block w-full rounded-lg bg-mint-600 px-5 py-3 text-sm font-medium text-white-50">
+        <button type="submit" class="block w-full rounded-lg bg-primary px-5 py-3 text-sm font-medium text-white">
           Masuk
         </button>
 
         <p class="text-center text-sm text-mint-300">
           Belum memiliki akun?
-          <a class="font-bold text-mint-800" href="<?= base_url('register-page'); ?>">Buat Akun</a>
+          <a class="font-bold text-primary" href="<?= base_url('register-page'); ?>">Buat Akun</a>
           di sini.
         </p>
         <?php echo form_close(); ?>
