@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <form action="" class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
+      <div class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
         <h2 class="font-bold text-2xl text-mint-600">Halaman Registrasi</h2>
         <p class="text-lg text-mint-400 font-medium">Masukkan data diri, lalu klik Daftar untuk mendaftar akun baru.</p>
 
@@ -83,9 +83,9 @@
         </div>
 
         <div>
-          <label for="ulangi_password" class="text-sm font-medium">Konfirmasi Kata Sandi</label>
+          <label for="password_ulang" class="text-sm font-medium">Konfirmasi Kata Sandi</label>
           <div class="relative mt-1">
-            <input type="password" id="ulangi_password" name="ulangi_password" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-md" placeholder="Masukkan ulang kata sandi" />
+            <input type="password" id="password_ulang" name="password_ulang" class="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-md" placeholder="Masukkan ulang kata sandi" />
             <span class="absolute inset-y-0 right-4 inline-flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-mint-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -105,7 +105,7 @@
           di sini.
         </p>
         <?php echo form_close(); ?>
-      </form>
+      </div>
     </div>
   </div>
 </body>
