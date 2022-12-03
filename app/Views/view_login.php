@@ -29,8 +29,8 @@
       </div>
 
       <form action="" class="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
-        <h2 class="font-bold text-2xl text-mint-500">Halaman Masuk</h2>
-        <p class="text-lg text-mint-400 font-medium">Masukkan data diri Anda untuk masuk ke aplikasi</p>
+        <h2 class="font-bold text-2xl text-mint-600">Halaman Masuk</h2>
+        <p class="text-lg font-medium">Masukkan data diri Anda untuk masuk ke aplikasi</p>
 
         <?php
         $session = session();
@@ -80,8 +80,8 @@
           di sini.
         </p>
         <?php echo form_close(); ?>
-      </form>
     </div>
+  </div>
   </div>
 </body>
 

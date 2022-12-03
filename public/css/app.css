@@ -1054,6 +1054,7 @@ hmtl {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+<<<<<<< HEAD
 .duration-300{
   transition-duration: 300ms;
 }
@@ -1087,6 +1088,13 @@ hmtl {
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
+=======
+.hover\:bg-mint-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 203 164 / var(--tw-bg-opacity));
+}
+@media (prefers-color-scheme: dark) {
+>>>>>>> 684d9d368c42b8890d77afb3a2439890dad63378
 
 .hover\:bg-blend-darken:hover{
   background-blend-mode: darken;
@@ -1104,8 +1112,12 @@ hmtl {
     background-color: rgb(30 41 59 / var(--tw-bg-opacity));
   }
 }
+<<<<<<< HEAD
 
 @media (min-width: 640px){
+=======
+@media (min-width: 640px) {
+>>>>>>> 684d9d368c42b8890d77afb3a2439890dad63378
 
   .sm\:px-6{
     padding-left: 1.5rem;
@@ -1141,11 +1153,16 @@ hmtl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+<<<<<<< HEAD
 
   .sm\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
   }
+=======
+}
+@media (min-width: 768px) {
+>>>>>>> 684d9d368c42b8890d77afb3a2439890dad63378
 
   .sm\:text-5xl{
     font-size: 3rem;
@@ -1167,8 +1184,12 @@ hmtl {
     line-height: 1;
   }
 }
+<<<<<<< HEAD
 
 @media (min-width: 768px){
+=======
+@media (min-width: 1024px) {
+>>>>>>> 684d9d368c42b8890d77afb3a2439890dad63378
 
   .md\:flex{
     display: flex;
@@ -1271,8 +1292,12 @@ hmtl {
     line-height: 1;
   }
 }
+<<<<<<< HEAD
 
 @media (min-width: 1280px){
+=======
+@media (min-width: 1280px) {
+>>>>>>> 684d9d368c42b8890d77afb3a2439890dad63378
 
   .xl\:gap-12{
     gap: 3rem;
