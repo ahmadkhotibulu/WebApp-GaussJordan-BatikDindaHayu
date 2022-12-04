@@ -46,10 +46,10 @@
     </nav>
     <main class="w-100">
       <article class="bg-white mx-auto p-4 border-bottom border-success my-4 shadow-sm pb-5" style="max-width: 60rem;">
-        <h3 class="text-success ff-heading">Batik Dinda Hayu</h3>
+        <h2 class="text-success ff-heading">Batik Dinda Hayu</h2>
         <hr class="border-dark">
         <img class="img-fluid" src="<?= base_url('assets/images/batik-dindahayu-rumah.png');?>" alt="Rumah Batik Dinda Hayu">
-        <p class="mt-3">
+        <p class="mt-3" style="text-indent: 6ch;">
           Home Industry Batik Dinda Hayu memproduksi 3 jenis produk dan olahan batik tulis yakni selendang batik,
           baju batik, dan tas batik. Dalam pembuatan masing-masing jenis produk dibutuhkan 3 buah variabel yakni
           ukuran kain, biaya pewarnaan, dan lama pengerjaan. Berdasarkan hasil observasi wawancara, didapatkan data
@@ -70,7 +70,7 @@
           lama pengerjaan 4 minggu.</li>
         </ul>
         <hr class="border-dark">
-        <p>
+        <p style="text-indent: 6ch;">
           Berdasarkan data hasil observasi, berapa banyak untuk masing-masing jenis produk dan olahan yang dapat
           diproduksi dari Home Industry Batik Dinda Hayu jika disediakan kain berukuran 36m<sup>2</sup>, dana pewarnaan
           sejumlah Rp 700.000,- serta waktu pengerjaan selama 60 minggu?

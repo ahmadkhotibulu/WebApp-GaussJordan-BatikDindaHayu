@@ -71,9 +71,9 @@
           <input class="form-control" type="password" name="password_baru" id="password_baru">
           <label class='text-success fw-bold mt-2' for="password_ulang"><i class="bi bi-key"></i> Ulangi Password Baru <span style="opacity: 0.7; font-size: 0.65em;">(opsional)</span></label>
           <input class="form-control" type="password" name="password_ulang" id="password_ulang">
-          <input class='btn btn-success fw-bold px-3 py-2 mt-3' type="submit" value="Ubah">
+          <hr class="border-dark">
+          <input class='btn btn-success fw-bold px-3 py-2' type="submit" value="Ubah">
         <?= form_close(); ?>
-        <hr class="border-dark">
       </article>
     </main>
   </div>

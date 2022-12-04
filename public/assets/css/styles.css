@@ -14,3 +14,8 @@ body {
 .ff-heading {
   font-family: "Mali", cursive;
 }
+
+.navbar-brand {
+  font-family: "Mali", cursive;
+  font-weight: bold;
+}

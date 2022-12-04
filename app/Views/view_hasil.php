@@ -49,6 +49,31 @@
         <h2 class="text-success ff-heading">Hasil Penghitungan</h2>
         <p>Estimasi produksi yang diperoleh yakni sebagai berikut :</p>
         <hr class="border-dark">
+        <div class="row mt-2">
+          <div class="col col-6 col-md-7">
+            <table class="fs-5">
+              <tr>
+                <td>&nbsp;Selendang Batik&nbsp;&nbsp;&nbsp;</td>
+                <td>:</td>
+                <td class="fs-4">&nbsp;<?= floor($xyz['x']);?> &nbsp;<span style="opacity: 0.65; font-size:0.65em">(<?= round($xyz['x'], 6);?>)</span></td>
+              </tr>
+              <tr>
+                <td>&nbsp;Baju Batik&nbsp;&nbsp;&nbsp;</td>
+                <td>:</td>
+                <td class="fs-4">&nbsp;<?= floor($xyz['y']);?> &nbsp;<span style="opacity: 0.65; font-size:0.65em">(<?= round($xyz['y'], 6);?>)</td>
+              </tr>
+              <tr>
+                <td>&nbsp;Tas Batik&nbsp;&nbsp;&nbsp;</td>
+                <td>:</td>
+                <td class="fs-4">&nbsp;<?= floor($xyz['z']);?> &nbsp;<span style="opacity: 0.65; font-size:0.65em">(<?= round($xyz['z'], 6);?>)</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col col-md-1"></div>
+          <div class="col col-6 col-md-4">
+              <canvas class="w-100 h-100" id="myChart"></canvas>
+          </div>
+        </div>
         <?php
           $session = session();
           $sessionStatus = $session->get('status');
@@ -61,39 +86,77 @@
             $session->remove('status');
           }
         ?>
-        <?= form_open(''); ?>
-          <fieldset>
-            <legend class="fs-6 fw-bold text-success mt-2">Hasil Kalkulasi</legend>
-              <table class="fw-100">
-                <tr>
-                  <td><label for="hasilX">&nbsp;&nbsp;Selendang Batik&nbsp;&nbsp;&nbsp;</label></td>
-                  <td>:</td>
-                  <td class="fs-4">
-                    &nbsp;<?= floor($hasil[0]); ?><span class="" style="opacity: 0.7; font-size: 0.65em;"> &nbsp;( <?= $hasil[0]; ?> )</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="hasilY">&nbsp;&nbsp;Baju Batik&nbsp;&nbsp;&nbsp;</label></td>
-                  <td>:</td>
-                  <td class="fs-4">
-                    &nbsp;<?= floor($hasil[1]); ?><span style="opacity: 0.7; font-size: 0.65em;"> &nbsp;( <?= $hasil[1]; ?> )</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="hasilZ">&nbsp;&nbsp;Tas Batik&nbsp;&nbsp;&nbsp;</label></td>
-                  <td>:</td>
-                  <td class="fs-4">
-                    &nbsp;<?= floor($hasil[2]); ?> <span style="opacity: 0.7; font-size: 0.65em;"> &nbsp;( <?= $hasil[2]; ?> )</span>
-                  </td>
-                </tr>
-              </table>
-          </fieldset>
-        <?= form_close(); ?>
+        <?php
+          $array = [];
+          $arrayCount = 0;
+          foreach ($data as $iT => $tabelEliminasi) {
+            if ($iT == 0) echo "<h3 class='fs-6 text-success fw-bold mt-4'>Tabel data pra-eliminasi</h3>";
+            else echo "<h3 class='fs-6 text-success fw-bold mt-4'>Tabel elimasi ke-" . $iT . "</h3>";
+            echo "<table class='table w-100'>";
+              echo "<thead class='table-success'>";
+                echo "<tr>";
+                  echo "<th style='width: 29%'></th>";
+                  echo "<th style='width: 17%'>Selendang Batik</th>";
+                  echo "<th style='width: 17%'>Baju Batik</th>";
+                  echo "<th style='width: 17%'>Tas Batik</th>";
+                  echo "<th style='width: 20%'>Persediaan</th>";
+                echo "</tr>";
+              echo "</thead>";
+              echo "<tbody>";
+              foreach ($tabelEliminasi as $iE => $hasilEliminasi) {
+                $bahan = '';
+                if ($iE == 0) $bahan = 'Ukuran Kain (m<sup>2</sup>)';
+                else if ($iE == 1) $bahan = 'Biaya Pewarnaan (Rp)';
+                else if ($iE == 2) $bahan = 'Waktu Pengerjaan (minggu)';
+                echo "<tr>";
+                  echo "<th style='width: 29%'>" . $bahan . "</th>";
+                  if ($iT == 9) {
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[0], 6) . "</td>";
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[1], 6) . "</td>";
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[2], 6) . "</td>";
+                  $array[$arrayCount] = floor($hasilEliminasi[3]);
+                  $arrayCount++;
+                  echo "<td class='fw-bold " . ($hasilEliminasi[3] > 0 ? 'text-success' : 'text-danger') . "' style='width: 20%'>" . round($hasilEliminasi[3], 6) . "</td>";
+                  } else {
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[0], 6) . "</td>";
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[1], 6) . "</td>";
+                  echo "<td style='width: 17%'>" . round($hasilEliminasi[2], 6) . "</td>";
+                  echo "<td style='width: 20%'>" . round($hasilEliminasi[3], 6) . "</td>";}
+                echo "</tr>";
+              }
+              echo "</tbody>";
+            echo "</table>";
+          }
+        ?>
         <hr class="border-dark">
       </article>
     </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Selendang Batik', 'Baju Batik', 'Tas Batik'],
+        datasets: [{
+          label: 'Jumlah Produksi',
+          data: [<?= $array[0];?>, <?= $array[1];?>, <?= $array[2];?>],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        events: ['click', 'mouseout'],
+        rotation: -0.7 * Math.PI
+      }
+    });
+  </script>
 </body>
 </html>

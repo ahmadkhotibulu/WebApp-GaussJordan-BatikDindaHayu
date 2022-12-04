@@ -129,10 +129,10 @@ class PenggunaController extends BaseController {
     $b[2] = $this->request->getPost('b3');
     
     $hitungModel = new PenghitunganModel();
-    $hasil = $hitungModel->gaussjordan($A, $b);
+    $data = $hitungModel->gaussjordan($A, $b);
 
     $pengguna->refreshSesi();
-    $data = ['matrikA' => $A, 'matrikB' => $b, 'hasil' => $hasil];
+    $data = ['data' => $data['data'], 'xyz' => $data['xyz']];
     echo view('view_hasil', $data);
   }
 

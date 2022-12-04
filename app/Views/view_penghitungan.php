@@ -136,7 +136,6 @@
           <hr class="border-dark">
           <input class="btn btn-success fw-bold px-3 py-2" type="submit" value="Hitung">
         <?= form_close(); ?>
-        <hr class="border-dark">
       </article>
     </main>
   </div>
