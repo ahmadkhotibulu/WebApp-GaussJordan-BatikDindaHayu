@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-md-2" role="list">
             <li class="nav-item me-md-2">
-              <a class="nav-link" href="<?= base_url('petunjuk-page');?>"><i class="bi bi-question-circle-fill"></i> Petunjuk Penggunaan</a>
+              <a class="nav-link active" href="<?= base_url('petunjuk-page');?>"><i class="bi bi-question-circle-fill"></i> Petunjuk Penggunaan</a>
             </li>
             <li class="nav-item me-md-2">
-              <a class="nav-link" href="<?= base_url('pengembang-page');?>"><i class="bi bi-journal-text"></i> Pengembang</a>
+              <a class="nav-link active" href="<?= base_url('pengembang-page');?>"><i class="bi bi-journal-text"></i> Pengembang</a>
             </li>
           </ul>
         </div>
