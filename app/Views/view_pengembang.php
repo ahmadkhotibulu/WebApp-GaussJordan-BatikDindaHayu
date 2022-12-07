@@ -65,17 +65,36 @@
     </div>
   </div>
 
-  <div class="h-screen w-full bg-gradient-to-t from-white to-mint-200">
-    <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      <div class="flex flex-col justify-center h-full">
-        <h3 class="text-3xl sm:text-6xl px-4 font-bold text-primary">Dosen Pembimbing</h3>
-        <p class="text-mint-500 px-4 py-4 max-w-md">Yumarlin MZ., S.Kom., M.Pd., M.Kom.</p>
-      </div>
-      <div class="relative overflow-hidden bg-no-repeat bg-cover">
-        <img class="rounded-2xl hover:rounded-2xl mx-auto md:w-full hover:scale-110 transition duration-500 ease-in-out" src="<?= base_url('assets/images/dosenpembimbing-yumarlinmz.png'); ?>" alt="Dosen Pembimbing">
+  <!-- Hero Sctionn Start -->
+  <section id="home" class="pt-36">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md:text-xl">
+            <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
+              Yumarlin MZ, S.Kom., M.Pd., M.Kom
+            </span>
+          </h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
+            Dosen Pembimbing |
+            <span class="text-dark">Metode Numerik</span>
+          </h2>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="relative mt-10 lg:mt-9 lg:right-0">
+            <img src="<?= base_url('assets/images/dosenpembimbing-yumarlinmz.png'); ?>" alt="" class="max-w-full mx-auto" />
+            <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+              <svg with="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#10B981" d="M38.6,-46.9C53.3,-33.8,70.6,-24.6,74.5,-11.8C78.4,1.1,68.8,17.6,58.6,32.4C48.4,47.1,37.5,60,23.2,66.3C9,72.5,-8.5,72,-22.8,65.6C-37.1,59.1,-48.2,46.6,-60.1,31.9C-72,17.1,-84.7,-0.1,-82.3,-14.6C-79.9,-29.2,-62.2,-41.2,-46,-54C-29.7,-66.9,-14.9,-80.6,-1.4,-78.9C12,-77.2,24,-60.1,38.6,-46.9Z" transform="translate(100 100)" />
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- Hero Sctionn End -->
+
 </body>
 
 </html>
