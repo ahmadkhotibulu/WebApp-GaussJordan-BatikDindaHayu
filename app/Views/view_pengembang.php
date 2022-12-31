@@ -59,8 +59,13 @@
             <li class="fw-bold">Eti</li>
             <li class="text-success fw-bold">Narasumber</li>
             <li>(letak pada foto: kiri)</li>
+            <div class="position-relative pt-3" style="height: 18rem;">
+              <img class="mx-auto d-block img-fluid position-absolute" src="<?= base_url('assets/images/person-bg-2.svg');?>" alt="Green colored shape">
+              <img class="mx-auto d-block img-fluid position-absolute" src="<?= base_url('assets/images/dosenpembimbing-yumarlinmz.png');?>" alt="Ibu Yumarlin">
+            </div>
             <li class="mt-3 fw-bold">Yumarlin MZ., S.Kom., M.Pd., M.Kom.</li>
             <li class="text-success fw-bold">Dosen Pembimbing</li>
+            <li class="text-success fw-bold">Mata Kuliah Metode Numerik</li>
           </ul>
         </div>
       </article>
